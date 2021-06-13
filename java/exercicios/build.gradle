@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+    id 'pmd'
+}
+
+group 'me.rto'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+checkstyle {
+    toolVersion = '8.43'
+    showViolations = true
+    configFile = file("config/checkstyle/checkstyle.xml")
+}
+
+pmd {
+    consoleOutput = true
+    toolVersion = "6.21.0"
+    //rulesMinimumPriority = 5
+    ruleSets = ["category/java/errorprone.xml", "category/java/bestpractices.xml"]
+}
