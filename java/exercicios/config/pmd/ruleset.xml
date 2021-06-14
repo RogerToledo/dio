@@ -163,5 +163,7 @@
         <exclude name="UnusedFormalParameter"/>
         <exclude name="UnusedPrivateMethod"/>  <!-- too much false positives with annoated methods e.g. @PostConstruct, @Activate -->
     </rule>
+    <rule ref="rulesets/java/bestpractices.xml/SystemPrintln" />
+
 
 </ruleset>
