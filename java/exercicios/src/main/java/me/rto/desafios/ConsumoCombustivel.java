@@ -1,4 +1,4 @@
-package Desafios;
+package me.rto.desafios;
 
 import java.util.Locale;
 import java.util.Scanner;

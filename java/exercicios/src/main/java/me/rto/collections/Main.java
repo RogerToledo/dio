@@ -16,26 +16,8 @@ public class Main {
         //SetExerc setExerc = new SetExerc();
         //setExerc.setExerc();
 
-        //ExercicioOptional exercicioOptional = new ExercicioOptional();
-        //exercicioOptional.exercicioOptional();
-
-        Scanner scanner = new Scanner(System.in);
-
-        List<Float> numeros = new ArrayList<>();
-
-        for (int i = 0; i <= 6; i++) {
-            numeros.add(Float.parseFloat(scanner.next()));
-        }
-
-        List<Float> numerosPositivos = new ArrayList<>();
-
-        numeros.forEach(numero -> {
-            if (numero > 0) {
-                numerosPositivos.add(numero);
-            }
-        });
-
-        System.out.println(numerosPositivos.size() + " valores positivos");
+        ExercicioOptional exercicioOptional = new ExercicioOptional();
+        exercicioOptional.exercicioOptional();
 
     }
 }

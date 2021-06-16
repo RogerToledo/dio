@@ -1,4 +1,4 @@
-package Desafios;
+package me.rto.desafios;
 
 import java.io.IOException;
 import java.util.Scanner;
