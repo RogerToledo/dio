@@ -1,11 +1,12 @@
-package me.rto.exercicios;
+package me.rto.collections;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 
 public class SetExerc {
-    public static void main(String[] args) {
+    public void setExerc() {
         List<Integer> listNumeros = new ArrayList<>();
         List<Integer> numeros = new ArrayList<>();
         numeros.add(3);
@@ -42,7 +43,7 @@ public class SetExerc {
 
     }
 
-    private static void listaNumeros(List<Integer> numeros) {
+    private void listaNumeros(List<Integer> numeros) {
         numeros.forEach(numero -> {
             System.out.println(">> Numero: " + numero);
         });
