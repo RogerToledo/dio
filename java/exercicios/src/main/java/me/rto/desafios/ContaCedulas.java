@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class ContaCedulas {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-
         int notasInseridas = scanner.nextInt();
+        scanner.close();
+
         int atual = notasInseridas;
         int notas100 = atual / 100;
         atual -= notas100 * 100;

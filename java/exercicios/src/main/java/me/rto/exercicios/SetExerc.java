@@ -1,4 +1,4 @@
-package me.rto.collections;
+package me.rto.exercicios;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class SetExerc {
-    public void setExerc() {
+    public static void main(String[] args) {
         List<Integer> listNumeros = new ArrayList<>();
         List<Integer> numeros = new ArrayList<>();
         numeros.add(3);
@@ -31,19 +31,15 @@ public class SetExerc {
         listNumeros.clear();
 
         // Remove o primeiro item
-        System.out.println("Remove o prieiro item");
+        System.out.println("Remove o primeiro item");
 
         hashSetNumeros.remove(3);
         listNumeros.addAll(hashSetNumeros);
         listaNumeros(listNumeros);
 
-        System.out.println("Remove o prieiro item");
-
-        System.out.println("Remove o prieiro item");
-
     }
 
-    private void listaNumeros(List<Integer> numeros) {
+    private static void listaNumeros(List<Integer> numeros) {
         numeros.forEach(numero -> {
             System.out.println(">> Numero: " + numero);
         });

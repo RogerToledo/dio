@@ -11,8 +11,9 @@ public class ConsumoCombustivel {
 
         int km = scanner.nextInt();
         double litros = scanner.nextDouble();
+        scanner.close();
 
-        double media = km / litros ;
+        double media = km / litros;
 
         System.out.println(String.format("%.3f km/l", media));
     }
