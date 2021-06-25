@@ -18,8 +18,9 @@ public class NumerosPositivos {
             } catch (Exception e) {
                 System.out.println("Ops... Algum valor diferente de float foi inserido.");
             }
-
         }
+
+        scanner.close();
 
         List<Float> numerosPositivos = new ArrayList<>();
 

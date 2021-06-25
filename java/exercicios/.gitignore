@@ -58,3 +58,5 @@ nbdist/
 gradle-app.setting
 !gradle-wrapper.jar
 
+### Package
+/src/main/java/me/rto/exemplo/

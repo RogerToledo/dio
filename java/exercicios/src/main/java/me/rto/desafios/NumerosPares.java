@@ -9,9 +9,10 @@ public class NumerosPares {
         Scanner scanner = new Scanner(System.in);
         scanner.useLocale(Locale.ENGLISH);
         int numero = scanner.nextInt();
+        scanner.close();
 
         if (numero > 0) {
-            for (int i = 0 ; i <= numero; i++) {
+            for (int i = 0; i <= numero; i++) {
                 if (i > 0 && i % 2 == 0) {
                     System.out.println(i);
                 }
@@ -19,7 +20,5 @@ public class NumerosPares {
         } else {
             System.out.println("Apenas inteiros positivos.");
         }
-
-
     }
 }

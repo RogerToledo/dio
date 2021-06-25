@@ -31,6 +31,7 @@ public class AnaliseNumeros {
                 numerosImpares++;
             }
         }
+        scanner.close();
 
         System.out.println(numerosPares + " valor(es) par(es)");
         System.out.println(numerosImpares + " valor(es) impar(es)");

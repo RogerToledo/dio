@@ -1,11 +1,10 @@
-package me.rto.collections;
+package me.rto.exercicios;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class CollectionsExerc {
-    public void collections() {
+    public static void main(String[] args) {
         // Adicione 5 nomes: Juliana, Pedro, Carlos, Larissa e João
         // Listar os nomes
         List<String> nomes = new ArrayList<>();
@@ -58,7 +57,7 @@ public class CollectionsExerc {
         listaNomes("Adicione os itens da lista nova na lista antiga", nomes);
 
         // Ordene os itens da lista por ordem alfabética
-        Collections.sort(nomes);
+        java.util.Collections.sort(nomes);
         listaNomes("Ordene os itens da lista por ordem alfabética", nomes);
 
         // Verifique se as listas estão vazias
@@ -67,21 +66,21 @@ public class CollectionsExerc {
         System.out.println(verificaListaVazia("novaLista", novaLista));
     }
 
-    private void listaNomes(String atividade, List<String> listaNomes) {
+    private static void listaNomes(String atividade, List<String> listaNomes) {
         System.out.println(">> " + atividade);
         listaNomes.forEach(nome -> {
             System.out.println("    Nome: " + nome);
         });
     }
 
-    private List<String> substituiNome(String[] nomeSubstituir, List<String> nomes) {
+    private static List<String> substituiNome(String[] nomeSubstituir, List<String> nomes) {
         int index = nomes.indexOf(nomeSubstituir[0]);
         nomes.set(index, nomeSubstituir[1]);
 
         return nomes;
     }
 
-    private String verificaNomeExiste(String nome, List<String> nomes) {
+    private static String verificaNomeExiste(String nome, List<String> nomes) {
         boolean existe = nomes.contains(nome);
         String mensagem = existe
                 ? "O nome " + nome + " existe na lista."
@@ -90,7 +89,7 @@ public class CollectionsExerc {
         return mensagem;
     }
 
-    private String verificaListaVazia(String nome, List<String> lista) {
+    private static String verificaListaVazia(String nome, List<String> lista) {
         boolean vazia = lista.isEmpty();
         String mensagem = vazia
                 ? "A lista " + nome + " está vazia!"

@@ -1,13 +1,12 @@
-package me.rto.collections;
+package me.rto.exercicios;
 
 import java.util.ArrayDeque;
-import java.util.Queue;
 
 public class QueueExerc {
-    public void queue() {
+    public static void main(String[] args) {
         // Adicione 5 nomes: Juliana, Pedro, Carlos, Larissa e João
         // Listar os nomes
-        Queue<String> nomes = new ArrayDeque<>();
+        java.util.Queue<String> nomes = new ArrayDeque<>();
         nomes.add("Juliana");
         nomes.add("Pedro");
         nomes.add("Carlos");
@@ -54,7 +53,7 @@ public class QueueExerc {
         System.out.println(mensagem);
     }
 
-    private void listaNomes(String atividade, Queue<String> listaNomes) {
+    private static void listaNomes(String atividade, java.util.Queue<String> listaNomes) {
         System.out.println(">> " + atividade);
         listaNomes.forEach(nome -> {
             System.out.println("    Nome: " + nome);
